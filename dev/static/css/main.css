@@ -2880,7 +2880,7 @@ html {
   font-size: 18px;
 }
 body {
-  font-family: "MuseoSansRegular", Atial, sans-serif;
+  font-family: "MuseoSansRegular", Arial, sans-serif;
 }
 h1,
 h2,
@@ -2962,8 +2962,9 @@ button {
 .logo span {
   display: block;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
-.logo span text-transform uppercase:last-child {
+.logo span font-family boldestFont:last-child {
   margin-bottom: 0;
 }
 header {
@@ -2974,4 +2975,16 @@ header {
   width: 100%;
   padding: 20px 0;
   border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.header-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-nav__list li {
+  display: inline-block;
+  margin-right: 70px;
 }

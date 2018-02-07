@@ -7,10 +7,11 @@
 
 @font-face {
     font-family: "MuseoSansBoldBlack";
-/*    src: url(../fonts/PTSansBold/PT Sans Bold.ttf);*/
     src: url("MuseoSansBoldBlack/Museo 900.otf");
     font-style: normal;
     font-weight: normal;
+    
+    
     
 }
 
