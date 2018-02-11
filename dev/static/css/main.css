@@ -2880,7 +2880,8 @@ html {
   font-size: 18px;
 }
 body {
-  font-family: "MuseoSansRegular", Arial, sans-serif;
+  font-family: "MuseoSansMedium", Arial, sans-serif;
+  color: #333;
 }
 h1,
 h2,
@@ -2958,6 +2959,9 @@ button {
   max-width: 1200px;
   margin: 0 auto;
 }
+.gray-bg {
+  background-color: #f6fafb;
+}
 .logo {
   background: linear-gradient(90deg, #717aff, #df77ff);
   -webkit-background-clip: text;
@@ -3008,6 +3012,7 @@ h1 {
   text-align: center;
   color: #000;
   line-height: 30px;
+  font-family: "MuseoSansRegular", Arial, sans-serif;
 }
 .open-form__success:before {
   content: '';
@@ -3030,6 +3035,20 @@ h1 {
   box-shadow: 0 6px 12px 5px rgba(0,0,0,0.2);
   background: linear-gradient(90deg, #717aff, #df77ff);
   cursor: pointer;
+}
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-family: "MuseoSansBold", Arial, sans-serif;
+}
+.section-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 10px;
+  margin: 40px auto;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #717aff, #df77ff);
 }
 header {
   position: absolute;
@@ -3115,11 +3134,82 @@ header .container {
   background-color: #fff;
 }
 .about-us__text {
-  color: #333;
-  font-family: "MuseoSansMedium", Arial, sans-serif;
   font-size: 24px;
   line-height: 40px;
 }
 .about-us__text p {
   margin-bottom: 50px;
+}
+.doing-descr {
+  display: block;
+  margin-bottom: 60px;
+  font-size: 24px;
+  text-align: center;
+}
+.doing-icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.doing-icons__item {
+  position: relative;
+  width: 17%;
+  padding-top: 140px;
+  margin-bottom: 80px;
+  font-size: 16px;
+  text-align: center;
+}
+.doing-icons__item:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.doing-icons__item:after {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: 40px;
+  display: block;
+  background-image: url("../img/sprite/sprite.png");
+  background-position: -236px -97px;
+  width: 53px;
+  height: 13px;
+}
+.doing-icons__item:last-child:after {
+  display: none;
+}
+.doing-icon__seo:before {
+  background-image: url("../img/sprite/sprite.png");
+  background-position: 0px -137px;
+  width: 82px;
+  height: 83px;
+}
+.doing-icon__shop:before {
+  background-image: url("../img/sprite/sprite.png");
+  background-position: -97px -137px;
+  width: 83px;
+  height: 75px;
+}
+.doing-icon__call:before {
+  background-image: url("../img/sprite/sprite.png");
+  background-position: -137px 0px;
+  width: 84px;
+  height: 83px;
+}
+.doing-icon__send:before {
+  background-image: url("../img/sprite/sprite.png");
+  background-position: 0px -235px;
+  width: 82px;
+  height: 56px;
+}
+.doing-icon__money:before {
+  background-image: url("../img/sprite/sprite.png");
+  background-position: -236px 0px;
+  width: 68px;
+  height: 82px;
 }

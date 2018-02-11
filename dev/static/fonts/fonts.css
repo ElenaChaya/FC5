@@ -35,3 +35,10 @@
     font-style: normal;
     font-weight: normal;
 }
+
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url(MyriadProRegular/Myriad Pro Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
