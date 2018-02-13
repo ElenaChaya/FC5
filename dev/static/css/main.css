@@ -3050,6 +3050,24 @@ h1 {
   border-radius: 5px;
   background: linear-gradient(90deg, #717aff, #df77ff);
 }
+.g-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.g-list li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #4a90e2;
+}
 header {
   position: absolute;
   top: 0;
@@ -3238,28 +3256,7 @@ header .container {
   border-radius: 5px;
   background: #4a90e2;
 }
-.price-list li {
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 30px;
-}
-.price-list li:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 18px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #4a90e2;
-}
-.price-list li b {
-  display: inline-block;
-}
-.price-list .price-list__descr {
+.g-list .price-list__descr {
   display: block;
   margin-bottom: 15px;
   font-size: 14px;
@@ -3283,4 +3280,11 @@ header .container {
 }
 .why {
   padding: 60px 0;
+  background: url("../img/general/why-bg.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.why-content {
+  padding: 80px;
+  background-color: #fff;
+  border-radius: 25px;
 }
