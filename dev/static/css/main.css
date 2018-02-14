@@ -3056,6 +3056,9 @@ h1 {
   background: linear-gradient(90deg, #717aff, #df77ff);
   cursor: pointer;
 }
+.g-btn.g-btn--dark {
+  background: #463d73;
+}
 .section-title {
   text-align: center;
   font-size: 32px;
@@ -3380,4 +3383,24 @@ header .container {
   bottom: -180px;
   max-width: 450px;
   width: 100%;
+}
+.invite {
+  padding: 60px 0;
+  background-color: #717aff;
+}
+.invite .section-title {
+  margin-bottom: 60px;
+  color: #fff;
+}
+.invite .section-title:after {
+  display: none;
+}
+.invite-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.invite-form input {
+  width: 30%;
 }
