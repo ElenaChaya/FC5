@@ -2885,7 +2885,7 @@ img.mfp-img {
   color: #717aff;
 }
 .review-slider .slick-dots li.slick-active button:before {
-  font-size: 12px;
+  font-size: 15px;
   color: #717aff;
 }
 html {
@@ -3005,11 +3005,12 @@ h1 {
   height: 290px;
   margin: 0 auto;
   padding: 40px;
-  background-color: rgba(0,15,0,0.3);
+  background-color: rgba(0,15,0,0.6);
   border-radius: 25px;
 }
 .form-title {
   display: block;
+  width: 100%;
   margin-bottom: 20px;
   text-align: center;
   font-size: 24px;
@@ -3030,7 +3031,7 @@ h1 {
 .open-form__success {
   display: none;
   text-align: center;
-  color: #000;
+  color: #fff;
   line-height: 30px;
   font-family: "MuseoSansRegular", Arial, sans-serif;
 }
@@ -3179,7 +3180,10 @@ header .container {
   line-height: 40px;
 }
 .about-us__text p {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+.about-us__text p:last-child {
+  margin-bottom: 0;
 }
 .doing-descr {
   display: block;
@@ -3315,11 +3319,18 @@ header .container {
   background-color: #fff;
   border-radius: 25px;
 }
+.why-content .g-list li {
+  margin-bottom: 30px;
+}
+.why-content .g-list li:last-child {
+  margin-bottom: 0;
+}
 .review {
   padding: 60px 0;
 }
 .review-item__content {
-  width: 60%;
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
 }
 .review-item__content iframe {
@@ -3338,14 +3349,14 @@ header .container {
   cursor: pointer;
 }
 .review-slider__next {
-  right: 10%;
+  right: 0;
   background-image: url("../img/sprite/sprite.png");
   background-position: -319px 0px;
   width: 63px;
   height: 63px;
 }
 .review-slider__prev {
-  left: 10%;
+  left: 0;
   background-image: url("../img/sprite/sprite.png");
   background-position: -236px -97px;
   width: 63px;
@@ -3374,6 +3385,18 @@ header .container {
   margin: 0;
   background-color: #fff;
 }
+.region .open-form__success {
+  position: relative;
+  padding-top: 70px;
+  color: #000;
+}
+.region .open-form__success .form-title {
+  position: absolute;
+  top: 0;
+}
+.region .open-form__success:before {
+  margin-bottom: 60px;
+}
 .region .g-input {
   border: 2px solid #e1e1e1;
 }
@@ -3400,6 +3423,9 @@ header .container {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
 }
 .invite-form input {
   width: 30%;
