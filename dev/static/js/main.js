@@ -32,4 +32,15 @@ $(document).ready(function() {
 	    }
 	  ]
 	});
+
+
+
+
+	$('.js-review__slider').slick({
+		dots: true,
+		nextArrow: '.review-slider__next',
+		prevArrow: '.review-slider__prev'
+
+	});
+		  
 	});
