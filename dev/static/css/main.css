@@ -3404,3 +3404,23 @@ header .container {
 .invite-form input {
   width: 30%;
 }
+footer {
+  padding: 25px 0;
+  background-color: #333;
+}
+footer .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+footer a {
+  color: #fff;
+}
+.footer-phone {
+  font-size: 20px;
+}
+.footer-politic {
+  text-decoration: underline;
+  font-size: 16px;
+}
