@@ -3565,6 +3565,22 @@ footer a {
     font-size: 24px;
     line-height: 40px;
   }
+  .open-form__wrap {
+    padding: 20px;
+    height: 250px;
+  }
+  .open-form__success {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .open-form__success:before {
+    display: none;
+  }
 }
 @media screen and (max-width: 350px) {
   h1 {
