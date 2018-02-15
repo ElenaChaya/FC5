@@ -42,5 +42,11 @@ $(document).ready(function() {
 		prevArrow: '.review-slider__prev'
 
 	});
-		  
+
+
+	$('.nav-mobile').click(function(){
+		$(this).toggleClass('active');
+		$('.main-nav__list').toggleClass('mobile-show');
 	});
+		  
+});

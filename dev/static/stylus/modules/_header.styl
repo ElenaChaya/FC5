@@ -23,6 +23,73 @@ header
 		color black
 		font-family mediumFont
 		
+	&.mobile-show
+		right -1.5%
+		transition all linear .8s
+	
+.nav-mobile
+	display none
+	position absolute
+	right -1.5%
+	top -20px
+	bottom -21px
+	width 70px
+	cursor pointer
+	background-color transparent
+	transition all linear .5s
+	
+	
+	&.active
+		background-color purpureColor
+		transition all linear .5s
+
+		.nav-mobile__line--top
+			top 50%
+			transform rotate(45deg) translateY(-50%)
+			transition all linear .5s
+		
+	
+		.nav-mobile__line--middle
+			opacity 0
+			transition all linear .5s
+			
+			
+		.nav-mobile__line--bottom
+			top 50%
+			transform rotate(-45deg) translateY(-50%)
+			transition all linear .5s
+
+
+		
+.nav-mobile__line
+	position absolute
+	left 20px
+	display block
+	width 30px
+	height 2px
+	background-color white 
+	
+.nav-mobile__line--top
+	top 48px
+	transition all linear .5s
+
+		
+	
+.nav-mobile__line--middle
+	top 58px
+	opacity 1
+	transition all linear .5s
+
+	
+.nav-mobile__line--bottom
+	top 68px
+	transition all linear .5s
+
+		
+
+
+
+		
 
 
 
