@@ -48,5 +48,37 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 		$('.main-nav__list').toggleClass('mobile-show');
 	});
-		  
+		 
+
+	$('.js-doing-icons').slick({
+	  speed: 300,
+	  slidesToShow: 5,
+	  slidesToScroll: 1,
+	  responsive: [
+	    {
+	      breakpoint: 950,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 1,
+	        infinite: false
+	      }
+	    },
+	    {
+	      breakpoint: 650,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1,
+	        infinite: false
+	      }
+	    },
+	    {
+	      breakpoint: 500,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        infinite: false
+	      }
+	    }
+	  ]
+	}); 
 });

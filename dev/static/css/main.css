@@ -3247,14 +3247,6 @@ header .container {
   font-size: 24px;
   text-align: center;
 }
-.doing-icons {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-}
 .doing-icons__item {
   position: relative;
   width: 17%;
@@ -3523,6 +3515,16 @@ footer a {
     font-size: 35px;
     line-height: 40px;
   }
+  .about-us__text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .about-us__text p {
+    margin-bottom: 20px;
+  }
+  .doing .container {
+    overflow: hidden;
+  }
 }
 @media screen and (max-width: 900px) {
   .wrapper {
@@ -3558,6 +3560,20 @@ footer a {
   h1 {
     margin-bottom: 80px;
   }
+  .about-us {
+    padding: 50px 0 100px;
+  }
+  .about-us__text {
+    -ms-flex-order: 1;
+        order: 1;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .about-us__img {
+    -ms-flex-order: 2;
+        order: 2;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 500px) {
   h1 {
@@ -3580,6 +3596,16 @@ footer a {
   }
   .open-form__success:before {
     display: none;
+  }
+  .doing-descr {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .doing-icons__item {
+    padding-top: 100px;
+  }
+  .doing-icons__item:after {
+    right: 40px;
   }
 }
 @media screen and (max-width: 350px) {
