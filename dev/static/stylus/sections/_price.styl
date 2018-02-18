@@ -1,6 +1,29 @@
 .price
 	padding 60px 0
+
+.price-slider
+
+	position relative
+	.slick-arrow
+		position absolute
+		top 50%
+		margin-top -30px
+		z-index 2
+		cursor pointer		
+
+.price-slider-next, .price-slider-prev
+	display none
+
+
+.price-slider-next
+	right 0
+	sprite($s-price-arrow-right)	
 	
+.price-slider-prev
+	left 0
+	sprite($s-price-arrow-left)	
+		
+
 .price-item
 	position relative
 	background-color white

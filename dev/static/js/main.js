@@ -2,32 +2,27 @@
 
 $(document).ready(function() {
 	$('.js-price__slider').slick({
-	  infinite: false,
 	  speed: 300,
 	  slidesToShow: 3,
 	  slidesToScroll: 0,
 	  responsive: [
 	    {
-	      breakpoint: 1024,
-	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 3,
-	        infinite: true,
-	        dots: true
-	      }
-	    },
-	    {
-	      breakpoint: 600,
+	      breakpoint: 1240,
 	      settings: {
 	        slidesToShow: 2,
-	        slidesToScroll: 2
+	        slidesToScroll: 1,
+	        infinite: true,
+	        nextArrow: '.price-slider-next',
+			prevArrow: '.price-slider-prev',
 	      }
 	    },
 	    {
-	      breakpoint: 480,
+	      breakpoint: 950,
 	      settings: {
 	        slidesToShow: 1,
-	        slidesToScroll: 1
+	        slidesToScroll: 1,
+	        nextArrow: '.price-slider-next',
+			prevArrow: '.price-slider-prev',
 	      }
 	    }
 	  ]
@@ -39,8 +34,15 @@ $(document).ready(function() {
 	$('.js-review__slider').slick({
 		dots: true,
 		nextArrow: '.review-slider__next',
-		prevArrow: '.review-slider__prev'
-
+		prevArrow: '.review-slider__prev',
+		responsive: [
+	    {
+	      breakpoint: 1150,
+	      settings: {
+      	  	arrows:false
+	      }
+	    }
+	  ]
 	});
 
 
