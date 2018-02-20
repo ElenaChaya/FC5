@@ -1,6 +1,12 @@
 ;
 
 $(document).ready(function() {
+
+$('.header-logo span').gradientText({
+		colors: ['#717aff', '#df77ff']
+	})
+
+
 	$('.js-price__slider').slick({
 	  speed: 300,
 	  slidesToShow: 3,
@@ -83,4 +89,32 @@ $(document).ready(function() {
 	    }
 	  ]
 	}); 
+
+
+	 $('.scroll-link').click(function () {
+        if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+                ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+
+	 $('.popup-link').magnificPopup({
+        type: 'inline',
+    });
+
+
 });

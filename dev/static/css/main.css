@@ -2975,18 +2975,13 @@ button {
 .gray-bg {
   background-color: #f6fafb;
 }
-.logo {
-  background: linear-gradient(90deg, #717aff, #df77ff);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.logo span {
+.logo .gradi {
   display: block;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-family: "MuseoSansBoldBlack", Arial, sans-serif;
 }
-.logo span:last-child {
+.logo .gradi:last-child {
   margin-bottom: 0;
 }
 h1 {
@@ -3009,9 +3004,6 @@ h1 {
   background-color: rgba(0,15,0,0.6);
   border-radius: 25px;
 }
-.open-form {
-  display: none;
-}
 .form-title {
   display: block;
   width: 100%;
@@ -3033,6 +3025,7 @@ h1 {
   border: 0;
 }
 .open-form__success {
+  display: none;
   text-align: center;
   color: #fff;
   line-height: 30px;
@@ -3527,6 +3520,24 @@ footer a {
   text-decoration: underline;
   font-size: 16px;
 }
+.popup {
+  position: relative;
+  width: 95%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+.popup-item {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "MuseoSansBold", Arial, sans-serif;
+  font-size: 20px;
+}
+.popup-text {
+  font-size: 16px;
+}
 @media screen and (max-width: 1240px) {
   .price {
     overflow: hidden;
@@ -3596,6 +3607,10 @@ footer a {
   }
   .region-man__pic {
     display: none;
+  }
+  .region {
+    background-size: 100%;
+    background-position: top center;
   }
   .region .container {
     min-height: auto;
