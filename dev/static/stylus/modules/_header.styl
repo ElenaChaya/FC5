@@ -1,98 +1,28 @@
 header
 	position absolute
-	top 0
-	left 0
-	right 0
 	width 100%
-	padding 20px 0
-	border-bottom 1px solid rgba(0,15,255,0.2)
 	z-index 1
 	
+	a
+		color #fff
+		
 	.container
 		display flex 
-		flex-wrap word-wrap
 		justify-content space-between
 		align-items center
-	
-.main-nav__list
-	li 
-		display: inline-block
-		margin-right: 70px
+		padding 15px
+
+.header-phone
+	margin-right 40px
+	font-family mediumFont
+	font-size 28px
 		
-	a
-		color black
-		font-family mediumFont
-		
-	&.mobile-show
-		right -1.5%
-		transition all linear .8s
-	
-.nav-mobile
-	display none
+.header-callback
+	font-size 20px
+	border-bottom 1px dashed #fff
+
+.header__social-list
 	position absolute
-	right -1.5%
-	top -20px
-	bottom -21px
-	width 70px
-	cursor pointer
-	background-color transparent
-	transition all linear .5s
-	
-	
-	&.active
-		background-color purpureColor
-		transition all linear .5s
-
-		.nav-mobile__line--top
-			top 50%
-			transform rotate(45deg) translateY(-50%)
-			transition all linear .5s
-		
-	
-		.nav-mobile__line--middle
-			opacity 0
-			transition all linear .5s
-			
-			
-		.nav-mobile__line--bottom
-			top 50%
-			transform rotate(-45deg) translateY(-50%)
-			transition all linear .5s
-
-
-		
-.nav-mobile__line
-	position absolute
-	left 20px
-	display block
-	width 30px
-	height 2px
-	background-color white 
-	
-.nav-mobile__line--top
-	top 48px
-	transition all linear .5s
-
-		
-	
-.nav-mobile__line--middle
-	top 58px
-	opacity 1
-	transition all linear .5s
-
-	
-.nav-mobile__line--bottom
-	top 68px
-	transition all linear .5s
-
-		
-
-
-
-		
-
-
-
-	
-
-	
+	right 0px
+	bottom 0px
+	z-index 1
